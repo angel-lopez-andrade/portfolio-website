@@ -1,0 +1,36 @@
+#me_coding {
+    body:after {
+        content: "";
+        background-image: url("/images/backgrounds/about_me.jpg");
+        background-size: cover;
+        opacity: 0.8;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+
+    #me-coding-main {
+        position: relative;
+        top: 90px;
+        margin: auto 25px;
+    }
+
+    .me-coding-article {
+        display: flex;
+        justify-content: space-around;
+        
+        border: 1px solid purple;
+    }
+
+    .me-coding-article .me-coding-image {
+        width: 120px;
+        border: solid 1px yellow;
+    }
+
+    .me-coding-article .me-coding-description {
+        background-color: rgba($white, 0.3);
+    }
+}

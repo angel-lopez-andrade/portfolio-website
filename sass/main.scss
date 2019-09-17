@@ -44,7 +44,7 @@ html, body {
     display: inline-block;
     flex-grow: 1;
     width: 100px;
-    border: 1.5px solid black;
+    border: 1.5px solid $black;
     font-size: 14px;
     font-weight: bold;
 }
@@ -98,6 +98,6 @@ h2 {
 
 /* Everything differing between pages imported from partials corresponding to that page (id set in html tag) */
 @import "homepage";
-@import "about_me";
+@import "interests";
+@import "me_coding";
 @import "portfolio";
-@import "links";
