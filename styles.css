@@ -1,8 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lobster+Two&display=swap");
 /* Everything consistent between pages stored in main.scss directly */
 body {
   margin: 0;
   font-family: "EB Garamond", serif;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #navbar {
@@ -14,19 +17,29 @@ body {
   background-color: white;
   color: black;
   z-index: 5;
+  text-align: center;
+  background-color: green;
 }
 
 .navbar-block {
   display: inline-block;
   flex-grow: 1;
-  text-align: center;
   width: 100px;
+  border: 1.5px solid black;
+  font-size: 14px;
 }
 
 #navbar-logo {
   display: inline-block;
   position: absolute;
-  top: 30px;
+  font-family: "Lobster Two", cursive;
+  background-color: #1245a8;
+  border-radius: 50%;
+  width: 150px;
+  color: #1edb1e;
+  border: 1.5px solid #b30000;
+  top: 20px;
+  z-index: 6;
 }
 
 /* Everything differing between pages imported from partials corresponding to that page (id set in html tag) */
