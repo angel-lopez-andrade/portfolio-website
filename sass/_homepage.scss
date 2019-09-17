@@ -1,5 +1,51 @@
 #homepage {
-    body {
+    body:after {
+        content: "";
         background-image: url("/images/backgrounds/homepage.jpg");
+        background-size: cover;
+        opacity: 0.9;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+
+    #main{
+        position: relative;
+        display: flex;
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: flex-start;
+        top: 49px;
+        width: 80%;
+        height: 85%;
+        background-color: rgba(white, 0.5);
+    }
+
+    #main div {
+        display: inline-block;
+        margin: 8px auto;
+        text-align: center;
+        width: 90%;
+        border: 1.5px solid black;
+    }
+
+    #headshot img {
+        margin-top: 10px;
+        border-radius: 50%;
+    }
+
+    @media screen and (min-width: 950px) {
+        #headshot img {
+            margin-top: 26px;
+        }
+    }
+
+    #headshot p:nth-child(2) {
+        position: relative;
+        bottom: 15px;
+        font-weight: 700;
     }
 }

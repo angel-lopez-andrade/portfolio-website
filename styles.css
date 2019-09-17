@@ -15,12 +15,15 @@
     opacity: 1;
   }
 }
-body {
+html, body {
+  height: 100%;
   margin: 0;
+  padding: 0;
   font-family: "EB Garamond", serif;
   background-repeat: no-repeat;
   background-size: cover;
   font-size: 16px;
+  box-sizing: border-box;
 }
 
 #navbar {
@@ -29,11 +32,9 @@ body {
   width: 100%;
   justify-content: space-around;
   align-items: stretch;
-  background-color: white;
-  color: black;
   z-index: 5;
   text-align: center;
-  background-color: green;
+  background-color: rgba(0, 128, 0, 0.85);
 }
 
 .navbar-block {
@@ -61,14 +62,14 @@ a {
   display: inline-block;
   position: absolute;
   font-family: "Lobster Two", cursive;
-  background-color: #1245a8;
-  border-radius: 50%;
+  background: linear-gradient(115deg, #63c0e7 0%, #006a8a 52%, #1f799c 100%);
+  border-radius: 45%;
   width: 10%;
   font-size: 14px;
   top: 1px;
   text-decoration: underline;
   color: #1edb1e;
-  border: 1.5px solid #b30000;
+  border: 1.5px double #b30000;
   z-index: 6;
   overflow: hidden;
 }
@@ -79,8 +80,49 @@ a {
   }
 }
 /* Everything differing between pages imported from partials corresponding to that page (id set in html tag) */
-#homepage body {
+#homepage body:after {
+  content: "";
   background-image: url("/images/backgrounds/homepage.jpg");
+  background-size: cover;
+  opacity: 0.9;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+#homepage #main {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: flex-start;
+  top: 49px;
+  width: 80%;
+  height: 85%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#homepage #main div {
+  display: inline-block;
+  margin: 8px auto;
+  text-align: center;
+  width: 90%;
+  border: 1.5px solid black;
+}
+#homepage #headshot img {
+  margin-top: 10px;
+  border-radius: 50%;
+}
+@media screen and (min-width: 950px) {
+  #homepage #headshot img {
+    margin-top: 26px;
+  }
+}
+#homepage #headshot p:nth-child(2) {
+  position: relative;
+  bottom: 15px;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=styles.css.map */
