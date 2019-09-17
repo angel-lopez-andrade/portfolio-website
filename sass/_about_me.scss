@@ -1,0 +1,14 @@
+#about_me {
+    body:after {
+        content: "";
+        background-image: url("/images/backgrounds/about_me.jpg");
+        background-size: cover;
+        opacity: 0.8;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+}

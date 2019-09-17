@@ -123,6 +123,7 @@ h2 {
   width: 90%;
   border: 1.5px solid black;
   line-height: 1.2em;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 #homepage #headshot img {
   margin-top: 10px;
@@ -132,6 +133,19 @@ h2 {
   #homepage #headshot img {
     margin-top: 28px;
   }
+}
+
+#about_me body:after {
+  content: "";
+  background-image: url("/images/backgrounds/about_me.jpg");
+  background-size: cover;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
 
 /*# sourceMappingURL=styles.css.map */
