@@ -1,7 +1,36 @@
 @import url("https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,700&display=swap");
+/* Everything consistent between pages stored in main.scss directly */
 body {
   margin: 0;
   font-family: "EB Garamond", serif;
+}
+
+#navbar {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: space-around;
+  align-items: stretch;
+  background-color: white;
+  color: black;
+  z-index: 5;
+}
+
+.navbar-block {
+  display: inline-block;
+  flex-grow: 1;
+  text-align: center;
+  width: 100px;
+}
+
+#navbar-logo {
+  display: inline-block;
+  position: absolute;
+  top: 30px;
+}
+
+/* Everything differing between pages imported from partials corresponding to that page (id set in html tag) */
+#homepage body {
   background-image: url("/images/backgrounds/homepage.jpg");
 }
 
