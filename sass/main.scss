@@ -3,11 +3,27 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster+Two&display=swap');
 
 /* Everything consistent between pages stored in main.scss directly */
+@keyframes link-fade {
+    25% {
+        opacity: 0.25;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    75% {
+        opacity: 0.75;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 body {
     margin: 0;
     font-family: 'EB Garamond', serif;
     background-repeat: no-repeat;
     background-size: cover;
+    font-size: 16px;
 }
 
 #navbar {
@@ -29,6 +45,19 @@ body {
     width: 100px;
     border: 1.5px solid black;
     font-size: 14px;
+    font-weight: bold;
+}
+
+.navbar-block:hover {
+    animation: link-fade 1s infinite;
+}
+
+a {
+    color: $black;
+}
+
+.navbar-block a:hover {
+    color: $white;
 }
 
 #navbar-logo {
@@ -37,11 +66,20 @@ body {
     font-family: 'Lobster Two', cursive;
     background-color: $blue;
     border-radius: 50%;
-    width: 150px;
+    width: 10%;
+    font-size: 14px;
+    top: 1px;
+    text-decoration: underline;
     color: $light-green;
     border: 1.5px solid $red-accent;
-    top: 20px;
     z-index: 6;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 950px) {
+    #navbar-logo {
+        font-size: 18px;
+    }
 }
 
 /* Everything differing between pages imported from partials corresponding to that page (id set in html tag) */
