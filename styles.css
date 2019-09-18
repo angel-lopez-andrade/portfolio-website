@@ -132,6 +132,7 @@ h2 {
   }
 }
 
+@keyframes reveal {}
 #interests body::before {
   content: "";
   background-image: url("images/backgrounds/interests.jpg");
@@ -148,27 +149,54 @@ h2 {
 }
 #interests #interests-main {
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
   border: 1px solid black;
   position: relative;
   top: 80px;
-  height: 400px;
+  height: 800px;
 }
 #interests #interest-container {
   border: 1px solid yellow;
   display: flex;
   flex-wrap: wrap;
-  height: 50%;
+  justify-content: space-around;
+  height: 100%;
 }
 #interests .interest-child {
-  width: 50%;
-  border: 1px solid green;
+  width: 40%;
+  margin: 5% 0;
+  border: 1.5px solid green;
+  text-align: center;
+}
+#interests .overlay {
+  position: relative;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+}
+#interests .enter-text {
+  background-color: white;
+  font-weight: bold;
+  line-height: 5em;
+  position: absolute;
+  border-radius: 5%;
+  height: 80px;
+  width: 80px;
+  left: 50%;
+  margin-left: -40px;
+  top: 50%;
+  margin-top: -40px;
 }
 #interests .interest-child:nth-child(1) {
   background-image: url("images/language_learning.jpg");
 }
+#interests .interest-child:nth-child(2) {
+  background-image: url("images/metal.jpg");
+}
 #interests .interest-child:nth-child(3) {
-  background-color: green;
+  background-image: url("images/videogames.jpg");
+}
+#interests .interest-child:nth-child(4) {
+  background-image: url("images/food_appreciation.jpg");
 }
 
 #me_coding body::after {
