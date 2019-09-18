@@ -16,15 +16,16 @@
     opacity: 1;
   }
 }
-html, body {
+* {
+  box-sizing: border-box;
+  font-family: "EB Garamond", serif;
+}
+
+body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: "EB Garamond", serif;
-  background-repeat: no-repeat;
-  background-size: cover;
   font-size: 16px;
-  box-sizing: border-box;
 }
 
 #navbar {
@@ -111,7 +112,6 @@ h2 {
   justify-content: flex-start;
   top: 49px;
   width: 80%;
-  height: 85%;
   background-color: rgba(255, 255, 255, 0.5);
 }
 #homepage #homepage-main div {
@@ -120,7 +120,7 @@ h2 {
   width: 90%;
   border: 1.5px solid black;
   line-height: 1.2em;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 #homepage #headshot img {
   margin-top: 10px;
@@ -132,9 +132,40 @@ h2 {
   }
 }
 
+#interests body::before {
+  content: "";
+  background-image: url("images/backgrounds/interests.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.7;
+}
+#interests #interests-main {
+  margin: 0 auto;
+  width: 80%;
+  border: 1px solid black;
+  position: relative;
+  top: 80px;
+}
+#interests #interests-container {
+  border: 1px solid yellow;
+  display: flex;
+  flex-wrap: wrap;
+}
+#interests .interests {
+  border: 1px solid red;
+  width: 50%;
+}
+
 #me_coding body::before {
   content: "";
-  background-image: url("/images/backgrounds/about_me.jpg");
+  background-image: url("/images/backgrounds/me_coding.jpg");
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -161,16 +192,20 @@ h2 {
   text-align: center;
   font-size: 26px;
   margin-top: 0;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 #me_coding .me-coding-image {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 #me_coding .me-coding-image img {
+  position: relative;
+  bottom: 20px;
   width: 270px;
   height: auto;
   margin: 40px 20px;
-  border: 1px solid #1edb1e;
+  border: 1.5px solid #1edb1e;
 }
 #me_coding .me-coding-description {
   background-color: rgba(255, 255, 255, 0.6);
