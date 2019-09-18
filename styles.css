@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,700,700i&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Lobster+Two&display=swap");
+@import url("https://fonts.googleapis.com/css?family=MedievalSharp&display=swap");
 /* Everything consistent between pages stored in main.scss directly */
 @keyframes link-fade {
   25% {
@@ -45,17 +46,15 @@ html, body {
   font-size: 14px;
   font-weight: bold;
 }
-
 .navbar-block:hover {
   animation: link-fade 1s infinite;
+}
+.navbar-block a:hover {
+  color: white;
 }
 
 a {
   color: black;
-}
-
-.navbar-block a:hover {
-  color: white;
 }
 
 #navbar-logo {
@@ -87,7 +86,6 @@ h2 {
 .italic-listing {
   font-style: italic;
 }
-
 .italic-listing::before {
   content: "- ";
 }
@@ -162,6 +160,11 @@ h2 {
 #me_coding h2 {
   text-align: center;
   font-size: 26px;
+  margin-top: 0;
+}
+#me_coding .me-coding-image {
+  display: flex;
+  align-items: center;
 }
 #me_coding .me-coding-image img {
   width: 270px;
@@ -169,24 +172,17 @@ h2 {
   margin: 40px 20px;
   border: 1px solid #1edb1e;
 }
-@media (min-width: 800px) {
-  #me_coding .me-coding-image img {
-    width: 330px;
-    margin: 40px 90px;
-  }
-}
-@media (min-width: 1200px) {
-  #me_coding .me-coding-image img {
-    width: 420px;
-    margin: 40px 140px;
-  }
-}
 #me_coding .me-coding-description {
   background-color: rgba(255, 255, 255, 0.6);
   align-self: stretch;
   padding: 0 10px;
   overflow: scroll;
   overflow-x: hidden;
+  max-height: 450px;
+}
+#me_coding .me-coding-description p::first-letter {
+  font-size: 22px;
+  font-family: "MedievalSharp", cursive;
 }
 #me_coding h3 {
   font-size: 20px;
@@ -194,8 +190,23 @@ h2 {
   text-decoration: underline;
   text-align: center;
 }
-#me_coding .me-coding-description p:nth-child(1)::first-letter {
-  font-size: 500;
+@media (min-width: 800px) {
+  #me_coding .me-coding-image img {
+    width: 330px;
+    margin: 40px 70px;
+  }
+  #me_coding .me-coding-description {
+    margin: 30px 15px;
+  }
+}
+@media (min-width: 1200px) {
+  #me_coding .me-coding-image img {
+    width: 420px;
+    margin: 40px 30px;
+  }
+  #me_coding .me-coding-description {
+    max-height: 850px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

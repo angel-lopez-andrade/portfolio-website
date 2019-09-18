@@ -1,6 +1,7 @@
 @import "variables";
 @import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,700,700i&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css?family=MedievalSharp&display=swap');
 
 /* Everything consistent between pages stored in main.scss directly */
 @keyframes link-fade {
@@ -47,18 +48,18 @@ html, body {
     border: 1.5px solid $black;
     font-size: 14px;
     font-weight: bold;
-}
 
-.navbar-block:hover {
-    animation: link-fade 1s infinite;
+    &:hover {
+        animation: link-fade 1s infinite;
+    }
+
+    a:hover {
+        color: $white;
+    }
 }
 
 a {
     color: $black;
-}
-
-.navbar-block a:hover {
-    color: $white;
 }
 
 #navbar-logo {
@@ -90,10 +91,10 @@ h2 {
 
 .italic-listing {
     font-style: italic;
-}
 
-.italic-listing::before {
-    content: "- "
+    &::before {
+        content: "- ";
+    }
 }
 
 /* Everything differing between pages imported from partials corresponding to that page (id set in html tag) */

@@ -1,4 +1,8 @@
 #me_coding {
+    * {
+        // border: yellow 1px solid;
+    }
+
     body::before {
         content: "";
         background-image: url("/images/backgrounds/about_me.jpg");
@@ -30,6 +34,12 @@
     h2 {
         text-align: center;
         font-size: 26px;
+        margin-top: 0;
+    }
+
+    .me-coding-image {
+        display: flex;
+        align-items: center;
     }
 
     .me-coding-image img {
@@ -39,26 +49,18 @@
         border: 1px solid $light-green;
     }
 
-    @media(min-width: 800px) {
-        .me-coding-image img {
-            width: 330px;
-            margin: 40px 90px;
-        }
-    }
-
-    @media(min-width: 1200px) {
-        .me-coding-image img {
-            width: 420px;
-            margin: 40px 140px;
-        }
-    }
-
     .me-coding-description {
         background-color: rgba($white, 0.6);
         align-self: stretch;
         padding: 0 10px;
         overflow: scroll;
         overflow-x: hidden;
+        max-height: 450px;
+
+        p::first-letter {
+            font-size: 22px;
+            font-family: 'MedievalSharp', cursive;
+        }
     }
 
     h3 {
@@ -68,7 +70,25 @@
         text-align: center;
     }
 
-    .me-coding-description p:nth-child(1)::first-letter {
-        font-size: 50;
+    @media(min-width: 800px) {
+        .me-coding-image img {
+            width: 330px;
+            margin: 40px 70px;
+        }
+
+        .me-coding-description {
+            margin: 30px 15px;
+        }
     }
+
+    @media(min-width: 1200px) {
+        .me-coding-image img {
+            width: 420px;
+            margin: 40px 30px;
+        }
+
+        .me-coding-description {
+            max-height: 850px;
+        }
+    }    
 }
