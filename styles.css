@@ -92,7 +92,7 @@ h2 {
 }
 
 /* Everything differing between pages imported from partials corresponding to that page (id set in html tag) */
-#homepage body:before {
+#homepage body:after {
   content: "";
   background-image: url("/images/backgrounds/homepage.jpg");
   background-size: cover;
@@ -144,7 +144,7 @@ h2 {
   bottom: 0;
   left: 0;
   z-index: -1;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 #interests #interests-main {
   margin: 0 auto;
@@ -152,18 +152,26 @@ h2 {
   border: 1px solid black;
   position: relative;
   top: 80px;
+  height: 400px;
 }
-#interests #interests-container {
+#interests #interest-container {
   border: 1px solid yellow;
   display: flex;
   flex-wrap: wrap;
+  height: 50%;
 }
-#interests .interests {
-  border: 1px solid red;
+#interests .interest-child {
   width: 50%;
+  border: 1px solid green;
+}
+#interests .interest-child:nth-child(1) {
+  background-image: url("images/language_learning.jpg");
+}
+#interests .interest-child:nth-child(3) {
+  background-color: green;
 }
 
-#me_coding body::before {
+#me_coding body::after {
   content: "";
   background-image: url("/images/backgrounds/me_coding.jpg");
   background-size: cover;
