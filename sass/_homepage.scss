@@ -43,4 +43,38 @@
             margin-top: 28px;
         }
     }
+
+    .article {
+        padding-bottom: 20px;
+    }
+
+    .article h3 {
+        display: inline-block;
+        position: relative;
+        right: 125px;
+        top: 15px;
+        text-decoration: underline;
+    }
+
+    .article-body {
+        position: relative;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+    }
+
+    .article-date {
+        position: relative;
+        display: inline-block;
+        right: 100px;
+        font-weight: bold;
+    }
+
+    .article-date::after {
+        content: ": "
+    }
+
+    .article-banner {
+        
+    }
 }
