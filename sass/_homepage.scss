@@ -20,7 +20,7 @@
         flex-direction: column;
         justify-content: flex-start;
         top: 49px;
-        width: 80%;
+        width: 85%;
         background-color: rgba($white, 0.5);
     }
 
@@ -30,7 +30,8 @@
         width: 90%;
         border: 1.5px solid black;
         line-height: 1.2em;
-        background-color: rgba($white, 0.8)
+        background-color: rgba($white, 0.8);
+        padding: 15px;
     }
 
     #headshot img {
@@ -44,15 +45,14 @@
         }
     }
 
-    .article {
+    #homepage-main.article{
         padding-bottom: 20px;
+        margin-bottom: 100px;
     }
 
     .article h3 {
         display: inline-block;
         position: relative;
-        right: 125px;
-        top: 15px;
         text-decoration: underline;
     }
 
@@ -65,8 +65,7 @@
 
     .article-date {
         position: relative;
-        display: inline-block;
-        right: 100px;
+        right: 35%;
         font-weight: bold;
     }
 
@@ -75,6 +74,10 @@
     }
 
     .article-banner {
-        
+        position: relative;
+        width: 300px;
+        max-width: 90%;
+        height: auto;
+        margin: 0 auto;
     }
 }
