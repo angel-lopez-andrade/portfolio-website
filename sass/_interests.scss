@@ -36,7 +36,9 @@
         background-color: $light-green;
         border: 2px ridge $white;
         border-radius: 50%;
-        margin-top: 0;
+        max-width: 350px;
+        right: 10px;
+        margin: 0 auto;
     }
 
     @media screen and (min-width: 800px) {

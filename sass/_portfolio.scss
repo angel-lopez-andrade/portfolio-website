@@ -12,8 +12,35 @@
         bottom: 0;
         left: 0;
         z-index: -1;
-        opacity: 0.8;
+        opacity: 0.7;
     }
-    
 
+    .link-scroller {
+        height: 50px;
+        overflow: hidden;//important
+        position: relative;//important
+        top: 50px;
+    }
+
+    .link-scroller p {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        line-height: 50px;
+        text-align: center;	
+
+        animation: scroll-left 20s linear infinite;//important
+        /* "go left, for 10s, at the same speed the whole time, forever" */
+    }
+
+    /* Move it (define the animation) */
+    @keyframes scroll-left {
+        0%   { 
+            transform: translateX(100%); 		
+        }
+        100% {
+            transform: translateX(-100%); 
+        }
+    }
 }
