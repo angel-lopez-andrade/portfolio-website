@@ -1,11 +1,14 @@
 #interests {
     @keyframes reveal {
-
+        100% {
+            background-color: transparent;
+        }
     }
 
     body::before {
         content: "";
         background-image: url("images/backgrounds/interests.jpg");
+        background-position: center;
         background-size: cover;
         width: 100%;
         height: 100%;
@@ -21,50 +24,43 @@
     #interests-main {
         margin: 0 auto;
         width: 90%;
-        border: 1px solid black;
         position: relative;
         top: 80px;
         height: 800px;
+        text-align: center;
     }
 
-    // @media(min-width: ) 
+    h2 {
+        position: relative;
+        font-size: 24px;
+        background-color: $light-green;
+        border: 2px ridge $white;
+        border-radius: 50%;
+        margin-top: 0;
+    }
+
+    @media screen and (min-width: 800px) {
+        h2 {
+            top: 15px;
+        }
+    }
 
     #interest-container {
-        border: 1px solid yellow;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         height: 100%;
+        margin-bottom: 15px;
     }
 
     .interest-child {
         width: 40%;
         margin: 5% 0;
-        border: 1.5px solid green;
+        border: 1.5px solid $black;
         text-align: center;
-        // overflow: scroll;
+        background-position: center;
     }
-
-    .overlay {
-        position: relative;
-        height: 100%;
-        background-color: rgba($black, 0.95);
-    }
-
-    .enter-text {
-        background-color: white;
-        font-weight: bold;
-        line-height: 5em;
-        position: absolute;
-        border-radius: 5%;
-        height: 80px;
-        width: 80px;
-        left: 50%;
-        margin-left: -40px;
-        top: 50%;
-        margin-top: -40px; 
-    }
-
+    
     .interest-child:nth-child(1) {
         background-image: url("images/language_learning.jpg");
     }
@@ -74,12 +70,63 @@
     }
 
     .interest-child:nth-child(3) {
-        background-image: url("images/videogames.jpg");
+        background-image: url("images/videogames.png");
     }
 
     .interest-child:nth-child(4) {
         background-image: url("images/food_appreciation.jpg");
     }
 
-    
+    .overlay {
+        position: relative;
+        height: 100%;
+        background-color: rgba($black, 0.95);
+    }
+
+    .overlay:hover {
+        animation: reveal 0.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+    .interest-child-textbox {
+        height: 100%;;
+        position: absolute;
+        overflow: scroll;
+        overflow-x: hidden;
+        padding: 10px;
+    }
+
+    .interest-child-textbox:hover {
+        background-color: rgba($white, 0.4);
+    }
+
+    .interest-child-textbox h3 {
+        text-decoration: underline;
+    }
+
+    // Small clickable textbox to reveal larger interest boxes (unimplemented)
+    // .enter-text {
+    //     background-color: white;
+    //     font-weight: bold;
+    //     line-height: 5em;
+    //     position: absolute;
+    //     border-radius: 5%;
+    //     height: 80px;
+    //     width: 80px;
+    //     left: 50%;
+    //     margin-left: -40px;
+    //     top: 50%;
+    //     margin-top: -40px;
+    //     transition: 0s 1s;
+    // }
+
+    // .enter-text:hover {
+    //     // animation: reveal-enter-text 0.5s;
+    //     // animation-iteration-count: 1;
+    //     // animation-fill-mode: forwards;
+    //     background-color: transparent;
+    //     color: transparent;
+    //     transition: 0s;
+    // }
 }
