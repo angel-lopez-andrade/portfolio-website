@@ -67,11 +67,18 @@ a {
   width: 10%;
   font-size: 14px;
   top: 1px;
+  right: 46%;
   text-decoration: underline;
   color: #1edb1e;
   border: 1.5px double #b30000;
   z-index: 6;
   overflow: hidden;
+  transition: color 0.7s;
+  transition: transform 0.7s;
+}
+#navbar-logo:hover {
+  color: orange;
+  transform: rotate(360deg);
 }
 
 @media screen and (min-width: 950px) {
