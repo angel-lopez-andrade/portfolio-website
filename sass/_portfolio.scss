@@ -1,13 +1,4 @@
 #portfolio {
-    @keyframes scroll-left {
-        0%   { 
-            transform: translateX(100%); 		
-        }
-        100% {
-            transform: translateX(-100%); 
-        }
-    }
-
     body::after {
         content: "";
         background-image: url("images/backgrounds/portfolio.jpg");
@@ -28,14 +19,13 @@
         position: absolute;
         margin: 70px 10%;
         width: 80%;
-        background-color: white;
+        background-color: rgba($white, 0.8);
         div h2 {
             text-align: center;
         }
     }
 
     #education-work-summary {
-        border: 1px solid red;
         #summary-container {
             .summary-item {
                 margin-left: 8%;
@@ -55,7 +45,24 @@
     }
 
     #coding-projects {
-        border: 1px solid blue;
+        #projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .project {
+                border: 1px solid black;
+                text-align: center;
+                img {
+                    margin: 0 auto;
+                    width: 460px;
+                    height: auto;
+                }
+                figcaption {
+                    background-color: $light-green;
+                    display: inline-block;
+                }
+            }
+        }
     }
 
     #linkbox {

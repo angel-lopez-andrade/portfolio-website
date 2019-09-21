@@ -345,14 +345,6 @@ h2 {
   }
 }
 
-@keyframes scroll-left {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
 #portfolio body::after {
   content: "";
   background-image: url("images/backgrounds/portfolio.jpg");
@@ -372,13 +364,10 @@ h2 {
   position: absolute;
   margin: 70px 10%;
   width: 80%;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 #portfolio #portfolio-main div h2 {
   text-align: center;
-}
-#portfolio #education-work-summary {
-  border: 1px solid red;
 }
 #portfolio #education-work-summary #summary-container .summary-item {
   margin-left: 8%;
@@ -394,8 +383,23 @@ h2 {
   position: relative;
   bottom: 10px;
 }
-#portfolio #coding-projects {
-  border: 1px solid blue;
+#portfolio #coding-projects #projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#portfolio #coding-projects #projects-container .project {
+  border: 1px solid black;
+  text-align: center;
+}
+#portfolio #coding-projects #projects-container .project img {
+  margin: 0 auto;
+  width: 460px;
+  height: auto;
+}
+#portfolio #coding-projects #projects-container .project figcaption {
+  background-color: #1edb1e;
+  display: inline-block;
 }
 #portfolio #linkbox {
   border: 1px solid green;
