@@ -367,11 +367,17 @@ h2 {
   background-color: rgba(255, 255, 255, 0.8);
 }
 #portfolio #portfolio-main div h2 {
+  font-size: 24px;
   text-align: center;
 }
 #portfolio #education-work-summary #summary-container .summary-item {
   margin-left: 8%;
   margin-right: 8%;
+  margin-top: 16px;
+}
+#portfolio #education-work-summary #summary-container .summary-item h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
 }
 #portfolio #education-work-summary #summary-container .summary-item date {
   display: block;
@@ -381,7 +387,7 @@ h2 {
 }
 #portfolio #education-work-summary #summary-container .summary-item p {
   position: relative;
-  bottom: 10px;
+  bottom: 18px;
 }
 #portfolio #coding-projects #projects-container {
   display: flex;
@@ -389,8 +395,10 @@ h2 {
   justify-content: center;
 }
 #portfolio #coding-projects #projects-container .project {
+  display: flex;
   border: 1px solid black;
   text-align: center;
+  flex-direction: column;
 }
 #portfolio #coding-projects #projects-container .project img {
   margin: 0 auto;
@@ -399,6 +407,7 @@ h2 {
 }
 #portfolio #coding-projects #projects-container .project figcaption {
   background-color: #1edb1e;
+  padding: 3px 8px;
   display: inline-block;
 }
 #portfolio #linkbox {

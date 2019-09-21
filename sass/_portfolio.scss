@@ -21,6 +21,7 @@
         width: 80%;
         background-color: rgba($white, 0.8);
         div h2 {
+            font-size: 24px;
             text-align: center;
         }
     }
@@ -30,6 +31,11 @@
             .summary-item {
                 margin-left: 8%;
                 margin-right: 8%;
+                margin-top: 16px;
+                h3 {
+                    font-size: 20px;
+                    margin-bottom: 8px;
+                }
                 date {
                     display: block;
                     position: relative;
@@ -38,7 +44,7 @@
                 }
                 p {
                     position: relative;
-                    bottom: 10px;
+                    bottom: 18px;
                 }
             }
         }
@@ -50,8 +56,10 @@
             flex-wrap: wrap;
             justify-content: center;
             .project {
+                display: flex;
                 border: 1px solid black;
                 text-align: center;
+                flex-direction: column;
                 img {
                     margin: 0 auto;
                     width: 460px;
@@ -59,6 +67,7 @@
                 }
                 figcaption {
                     background-color: $light-green;
+                    padding: 3px 8px;
                     display: inline-block;
                 }
             }
