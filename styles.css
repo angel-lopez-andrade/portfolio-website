@@ -374,14 +374,36 @@ h2 {
   width: 80%;
   background-color: white;
 }
+#portfolio #portfolio-main div h2 {
+  text-align: center;
+}
 #portfolio #education-work-summary {
   border: 1px solid red;
 }
+#portfolio #education-work-summary #summary-container .summary-item {
+  margin-left: 8%;
+  margin-right: 8%;
+}
+#portfolio #education-work-summary #summary-container .summary-item date {
+  display: block;
+  position: relative;
+  bottom: 10px;
+  text-align: right;
+}
+#portfolio #education-work-summary #summary-container .summary-item p {
+  position: relative;
+  bottom: 10px;
+}
 #portfolio #coding-projects {
-  border: 1px solid yellow;
+  border: 1px solid blue;
 }
 #portfolio #linkbox {
   border: 1px solid green;
+  display: flex;
+  justify-content: space-around;
+}
+#portfolio #linkbox .link-child {
+  border: 1px solid black;
 }
 
 /*# sourceMappingURL=styles.css.map */
