@@ -97,6 +97,12 @@
         overflow: scroll;
         overflow-x: hidden;
         padding: 10px;
+        h3 {
+            font-size: 22px;
+        }
+        p, ul {
+            font-weight: bold;
+        }
     }
 
     .interest-child-textbox:hover {
