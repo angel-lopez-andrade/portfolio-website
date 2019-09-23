@@ -13,7 +13,7 @@ In terms of features, the site employs a lot of Flexbox and opaque images. With 
 Content-wise, the site includes; 1) home section with a brief self-introduction and contacts bar, as well as a makeshift blog filled with lorem ipsum. 2) An interests section that shows four different personal interests to the reader. 3) A Me + Coding section that tracks my coding journey via brief story snippets. 4) A portfolio section that has a brief recent career/education overview, some selected coding projects and a linkbar to professional profiles.
 
 #sitemap
-
+see ./images/readme
 
 #screenshots
 see ./images/readme
