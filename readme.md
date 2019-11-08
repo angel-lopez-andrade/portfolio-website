@@ -1,7 +1,7 @@
 Portfolio Website Project
 
 #links
-https://github.com/poklipart/portfolio-website
+https://github.com/angel-lopez-andrade/portfolio-website
 https://boring-villani-878021.netlify.com/
 
 #brief
